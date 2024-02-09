@@ -1,6 +1,6 @@
 # MERN Real-Time Chat App
 
-Welcome to our MERN-ChatApp! This cutting-edge platform combines MongoDB, Express.js, React, and Node.js, enhanced with Socket.IO for seamless real-time communication and Tailwind CSS for a sleek and responsive user interface.
+Welcome to my MERN-ChatApp! This cutting-edge platform combines MongoDB, Express.js, React, and Node.js, enhanced with Socket.IO for seamless real-time communication and Tailwind CSS for a sleek and responsive user interface.
 
 ## Features
 
