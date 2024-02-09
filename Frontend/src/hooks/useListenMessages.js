@@ -1,15 +1,12 @@
 import { useEffect } from "react";
-import { useSocketContext } from "../context/SocketContext";
-import useConversation from "../zustand/useConversation"
 import notificationSound from "../assets/sounds/notification.mp3";
-import { useAuthContext } from "../context/AuthContext";
+import { useSocketContext } from "../context/SocketContext";
+import useConversation from "../zustand/useConversation";
 
 const useListenMessages = () => {
     const { socket } = useSocketContext();
     const { messages, setMessages, selectedConversation } = useConversation();
-    const { authUser } = useAuthContext();
-    console.log("selected id", selectedConversation._id);
-    console.log("Auth user", authUser._id);
+
     useEffect(() => {
         socket?.on("newMessage", (newMessage) => {
             console.log(newMessage);
